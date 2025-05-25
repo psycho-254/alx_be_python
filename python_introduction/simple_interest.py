@@ -34,6 +34,7 @@ time = 3         # Time in years
 P = principal  # Assign principal to P for clarity
 R = rate  # Assign rate to R for clarity
 T = time  # Assign time to T for clarity
+interest = principal * rate * time
 I = P * R * T  # Calculate the simple interest using the formula I = P * R * T
 interest = I # Store the calculated interest in a variable
 
