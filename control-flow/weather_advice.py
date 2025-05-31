@@ -9,7 +9,7 @@
 
 # Ask the user to input the current weather from a predefined set of conditions: sunny, rainy, or cold.
 # Use the prompt: What's the weather like today? (sunny/rainy/cold):.
-todays_weather = input("What's the weather like today? (sunny/rainy/cold)? ").lower()
+todays_weather = input("What's the weather like today? (sunny/rainy/cold)? ")
 
 
 # Provide Clothing Recommendations:
@@ -28,7 +28,7 @@ elif todays_weather == "cold":# If the weather is “cold”, recommend: Make su
 else: # Include an else statement that handles unexpected input by printing: Sorry, I don't have recommendations for this weather.
     print("Sorry, I don't have recommendations for this weather.")
 
-    
+
 # Output the Recommendation:
 
 # Print the clothing recommendation based on the weather condition provided by the user.
