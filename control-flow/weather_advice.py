@@ -9,7 +9,7 @@
 
 # Ask the user to input the current weather from a predefined set of conditions: sunny, rainy, or cold.
 # Use the prompt: What's the weather like today? (sunny/rainy/cold):.
-todays_weather = input("What's the weather like today? (sunny/rainy/cold)? ")
+todays_weather = input("What's the weather like today? (sunny/rainy/cold): ")
 
 
 # Provide Clothing Recommendations:
