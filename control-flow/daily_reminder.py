@@ -26,9 +26,9 @@
     # whether immediate action is required based on time sensitivity.
     # A message should be ‘that requires immediate attention today!’
 
-task = input("describe your task: ")
-priority = input("what is the task's priority level: high, medium, low: ")
-time_bound = input("is the task time bound? yes or no: ")
+task = input("Enter your task: ")
+priority = input("Priority (highmedium/low): ")
+time_bound = input("Is it time bound? {yes/no): ")
 
 match priority:
     case "high" if priority == "high" and time_bound == "yes":
