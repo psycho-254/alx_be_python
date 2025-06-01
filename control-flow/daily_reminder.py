@@ -35,12 +35,15 @@ match priority:
         print("Reminder: Start this task immediately!")
 
 match priority:
-    case "high" if priority == "high" and time_bound == "yes":
-        print(f"Reminder: Start this task immediately!")
-    case "medium" if priority == "medium" and time_bound == "yes":
-        print(f"Reminder: {task} is a medium priority task. Delegate it.")
-    case "low" if priority == "high" and time_bound == "no":
-        print(f"Note: {task} is a low priority task. You can do it later.")
+    case "high" if priority == "high":
+                    if time_bound == "yes":
+                        print(f"Reminder: Start this task immediately!")
+    case "medium" if priority == "medium": 
+                    if time_bound == "yes":
+                        print(f"Reminder: {task} is a medium priority task. Delegate it.")
+    case "low" if priority == "high": 
+                    if time_bound == "no":
+                        print(f"Note: {task} is a low priority task. You can do it later.")
     case _:
         print("Invalid input, try again")
     
