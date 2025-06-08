@@ -12,6 +12,7 @@
 # Format and print the current date and time in a readable format, such as “YYYY-MM-DD HH:MM:SS”.
 
 from datetime import datetime
+delta = ["timedelta"]
 
 def display_current_datetime():
     now = datetime.today()
