@@ -15,7 +15,8 @@ from datetime import datetime
 
 def display_current_datetime():
     now = datetime.now()
-    print(f"Current date and time: {now.year}-0{now.month}-0{now.day} {now.hour}-{now.minute}-{now.second}")
+    formatted_date = now.strftime("%Y-%m-%d %H:%M:%S")
+    print(formatted_date)
 
 display_current_datetime()
 
@@ -34,7 +35,8 @@ days = int(input("Enter the number of days to add to the current date: "))
 def calculate_future_date():
     today = datetime.now()
     future_date = today + timedelta(days)
-    print(f"{future_date.year}-{future_date.month}-{future_date.day}")
+    formatted_date = future_date.strftime("%Y-%m-%d")
+    print(formatted_date)
     
 calculate_future_date()
 
