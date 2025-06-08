@@ -38,13 +38,13 @@ def main():
         choice = input("Enter your choice: ")
 
         if choice == '1':
-            add_item = input ("Choose an item to add to your shopping list: ") # Prompt for 
+            add_item = input ("Enter item to add: ") # Prompt for 
             shopping_list.append(add_item) # add an item
             print(shopping_list)
             break
 
         elif choice == '2':
-            remove_item = input("Choose an item to remove from shopping list: ") # Prompt for 
+            remove_item = input("Enter item to remove: ") # Prompt for 
             shopping_list.remove(remove_item) # remove an item
             print(shopping_list)
             break
@@ -56,7 +56,7 @@ def main():
         elif choice == '4':
             print("Goodbye!")
             break
-        
+
         else:
             print("Invalid choice. Please try again.")
 
