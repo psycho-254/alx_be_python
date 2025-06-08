@@ -15,7 +15,7 @@ from datetime import datetime
 delta = ["timedelta"]
 
 def display_current_datetime():
-    now = datetime.today()
+    now = datetime.now()
     print(f"{now.year}-0{now.month}-0{now.day} {now.hour}-{now.minute}-{now.second}")
 
 display_current_datetime()
