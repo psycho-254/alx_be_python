@@ -36,27 +36,22 @@ def main():
     while True:
         display_menu()
         choice = input("Enter your choice: ")
-
         if choice == '1':
             item = input ("Enter the item to add: ") # Prompt for 
             shopping_list.append(item) # add an item
             print(shopping_list)
             break
-
         elif choice == '2':
             item = input("Enter the item to remove: ") # Prompt for 
             shopping_list.remove(item) # remove an item
             print(shopping_list)
             break
-            
         elif choice == '3':
             print(shopping_list) # Display the shopping list
             break
-        
         elif choice == '4':
             print("Goodbye!")
             break
-
         else:
             print("Invalid choice. Please try again.")
 
