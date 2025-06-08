@@ -37,7 +37,7 @@ def main():
         display_menu()
         choice = input("Enter your choice: ")
         if choice == '1':
-            item = input ("Enter the item to add: ") # Prompt for 
+            item = input("Enter the item to add: ") # Prompt for # 
             shopping_list.append(item) # add an item
             print(shopping_list)
             break
