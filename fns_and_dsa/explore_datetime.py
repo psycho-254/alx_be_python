@@ -12,17 +12,12 @@
 # Format and print the current date and time in a readable format, such as “YYYY-MM-DD HH:MM:SS”.
 
 from datetime import datetime
-delta = ["timedelta"]
 
 def display_current_datetime():
     now = datetime.now()
-    print(f"{now.year}-0{now.month}-0{now.day} {now.hour}-{now.minute}-{now.second}")
+    print(f"Current date and time: {now.year}-0{now.month}-0{now.day} {now.hour}-{now.minute}-{now.second}")
 
 display_current_datetime()
-
-
-
-
 
 
 # Part 2: Calculate a Future Date
@@ -32,6 +27,21 @@ display_current_datetime()
 # saves the future date inside a future_date variable
 # Calculate what the date will be after adding the specified number of days to the current date.
 # Print the future date in a format like “YYYY-MM-DD”.
+
+from datetime import datetime, timedelta
+days = int(input("Enter the number of days to add to the current date: "))
+
+def calculate_future_date():
+    today = datetime.now()
+    future_date = today + timedelta(days)
+    print(f"{future_date.year}-{future_date.month}-{future_date.day}")
+    
+calculate_future_date()
+
+
+
+
+
 
 
 
